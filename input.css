@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+.hy-auto{
+    hyphens:  auto;
+}
+@tailwind utilities;
+

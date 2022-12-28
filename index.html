@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    
+
+
+<meta name="theme-color" content="#ffffff">
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+   <link rel="stylesheet" href="./input.css">
+
+   <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Aadarsh Baral | Graphics Designer Portfolio</title>
+</head>
+<style>
+*{
+    font-family: 'Poppins';
+ 
+}
+
+
+body {
+    background-color:#1d1d1d !important;
+    font-family: "Asap", sans-serif;
+    color:#989898;
+    margin:10px;
+    font-size:16px;
+  }
+  .to-line-height {
+    line-height: 1.5;
+  }
+  #demo {
+    height:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  .link {
+    color : #6fb936;
+    text-decoration: underline;
+  }
+  
+  .green{
+    background-color:#6fb936;
+  }
+  .row {
+    margin: 15px;
+  }
+        
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .row-load {
+    display : none;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex:100%; /* IE 10 */
+    flex: 100%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 15px;
+    vertical-align: middle;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+</style>
+<body onload="showContainer()" class="relative">
+    <div class=" body bg-gradient-to-r from-[#004498] to-[#006aff]">
+<!-- <nav class= 'h-[15vh] p-2  text-white text-xl  max-w-[1000px] m-auto' >
+    <ul class = 'flex space-x-5 md:justify-end md:text-2xl justify-center'>
+        <li  class = "cursor-pointer  font-['Poppins']  font-semibold    text-[#e2e05e] p-2 rounded-md hover:bg-[#ebebeb] hover:text-[#896009] transition duration-100">Home</li>
+        <li  class = "cursor-pointer  font-['Poppins']  font-semibold    text-[#e2e05e] p-2 rounded-md hover:bg-[#ebebeb] hover:text-[#896009] transition duration-100">About</li>
+        <li  class = "cursor-pointer  font-['Poppins']  font-semibold   text-[#e2e05e] p-2 rounded-md hover:bg-[#ebebeb] hover:text-[#896009] transition duration-100">Contact Me </li>
+    
+    </ul>
+</nav> -->
+<!-- About me -->
+
+
+<div id = 'top' class= "flex h-[100vh] md:h-[100vh] justify-center items-center  max-w-[1000px] m-auto">
+<div class="md:items-center inner-container md:grid md:grid-cols-2 ml-[50px] mr-[50px] md:gap-4 flex flex-col">
+    <div class="items-center flex flex-col sm:items-start">
+      <div class="header-elem">
+        <h1 class ="break-words lg:text-5xl md:text-[2.5rem] text-3xl font-['Poppins'] font-semibold capitalize text-[#e2e05e] mb-3 items-center " style="hyphens: auto;">Hi! I am Aadarsh</h1>
+        <h1 class =" break-words lg:text-3xl md:text-[2.5rem] text-2xl font-['Poppins'] font-semibold capitalize text-[#e2e05e] mb-3 items-center leading-10" style="hyphens: auto;">This is my portfolio as a </h1>
+       
+        <h1 class ="break-all lg:text-4xl md:text-2xl text-2xl font-['Poppins'] font-semibold capitalize text-[#e2e05e] mb-2 items-center hyphens-auto">Graphics Designer</h1>
+      </div>
+        <!-- <div class="line w-100 bg-[#e2e05e] h-1 rounded-sm  mt-4 mb-2  "></div> -->
+        <div class=" flex gap-3 mt-3 mb-3">
+            <div class="dot   bg-[#ebebeb] w-2 h-2 rounded-sm" ></div>
+            <div class="dot  bg-[#ebebeb] w-2 h-2 rounded-sm" ></div>
+            <div class="dot  bg-[#ebebeb] w-2 h-2 rounded-sm" ></div>
+            <div class="dot  bg-[#ebebeb] w-2 h-2 rounded-sm" ></div>
+        </div>
+        <div class="buttons space-x-4 my-5 flex  flex-row justify-center ">
+        <a href="#aboutMe" class="bg-green-500 hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white text-center py-2 px-4 rounded">
+        About Me
+          </a>
+        
+        <a href="#myProjects" class="bg-green-500 hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white text-center py-2 px-4 rounded">
+        My Projects
+          </a>
+        </div>
+    </div>
+    <div class="info-img self-center">
+        <img src="./ind.png" class = "md:w-[400px] md:h-[400px] w-[300px] h-[300px]"  alt="">
+    </div>
+</div>
+</div>
+<h1 id = 'aboutMe' class=" text-center  text-3xl font-bold text-[#e2e05e]">About Me</h1>
+<div class="flex flex-col  about-me max-w-[1000px] m-auto bg-[#7a7a7a17] p-5 rounded-sm">
+    
+    
+    <p  class="text-left text-2xl text-white  leading-[50px] mb-4 justify-center" style="hyphens: auto;">Howdy! I am Aadarsh Baral. I am a Graphics Designer based on Pokhara Nepal and I can design any kind of digital design you want.<span class = "hidden" id = 'toShow' >
+        I primarily use Adobe Photoshop and Adobe Illustrator to design and make vector illustration and digital imageries. You can contact me through <a class="link"  target="_blank" href="https://www.facebook.com/adarsh.baral.03">Facebook</a> or Scroll to the <a class = 'link' href="#footer">Bottom</a> to check out my other social media pages</span>
+    </p>
+<a href="javascript:void(0)" class="text-center">
+    <button onclick="myFunction()" id = 'myBtn' class=" bg-green-500 inline hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white  py-2 px-4 rounded" >Extend
+        </button>
+    </a>
+</div>
+<br>
+<br>
+<br>
+<section id = 'myProjects' class = "max-w-[1000px] m-auto">
+    <h1 class="text-center text-3xl font-bold text-[#e2e05e]">My Projects</h1>
+
+    <div class="header" id="myHeader">
+
+
+        <!-- <button class="btn" onclick="four()">4</button> -->
+      </div>
+      
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+
+          <img src="./img/img (8).jpg" alt="">
+          <img src="./img/img (9).jpg" alt="">
+          <img src="./img/img (10).jpg" alt="">
+          <img src="./img/img (16).jpg" alt="">
+          <!-- <img src="./img/img (1).jpg" style="width:100%"> -->
+          <img src="./img/img (2).jpg" style="width:100%">
+          <img src="./img/img (3).jpg" style="width:100%">
+          <img src="./img/img (4).jpg" style="width:100%">
+          <img src="./img/img (5).jpg" style="width:100%">
+          <img src="./img/img (6).jpg" style="width:100%">
+          <img src="./img/img (14).jpg" style="width:100%">
+          <img src="./img/img (15).jpg" style="width:100%">
+          <img src="./img/img (17).jpg" style="width:100%">
+          <img src="./img/img (18).jpg" style="width:100%">
+          <img src="./img/img (19).jpg" style="width:100%">
+          <img src="./img/img (20).jpg" style="width:100%">
+        </div>
+        <div class="column"> 
+          <div id="row-load">
+          <img src="./img/img (11).jpg" alt="">
+          <img src="./img/img (12).jpg" alt="">
+          <img src="./img/img (13).jpg" alt="">
+          <img src="./img/img (29).jpg" style="width:100%">
+       <img src="./img/img (7).jpg" alt="">
+       <img src="./img/img (17).jpg" style="width:100%">
+       <img src="./img/img (18).jpg" style="width:100%">
+       <img src="./img/img (24).jpg" style="width:100%">
+       <img src="./img/img (25).jpg" style="width:100%">
+       <img src="./img/img (27).jpg" style="width:100%">
+       <img src="./img/img (28).jpg" style="width:100%">
+      
+       <img src="./img/img (21).jpg" style="width:100%">
+       <img src="./img/img (22).jpg" style="width:100%">
+       <img src="./img/img (23).jpg" style="width:100%">
+    
+          </div>
+        </div> 
+      </div>
+      
+
+    
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="footer" class="p-3 flex flex-col justify-center items-center footer absolute left-0 w-[100%] sm:h-[16vh] h-[50vh] bg-gradient-to-r from-[#004498] to-[#006aff] space-y-2 " style="box-shadow:  inset 0px 6px 15px -10px rgb(2, 2, 2),
+inset 0px -11px 8px -10px rgb(0, 0, 0); ">
+<div class="imgs  flex sm:flex-row flex-col text-white justify-center  items-center sm:space-x-4">
+    <a class = 'w-[100px] z-10 bg-green-500 inline hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white  py-2 px-2 rounded mb-3 text-center ' href="#">Facebook</a>
+    <a class = 'w-[100px] z-10 bg-green-500 inline hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 mb-3 text-white  py-2 px-4 rounded text-center' href="#">Linkedin</a>
+    <a class = 'w-[100px] z-10 bg-green-500 inline hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white  py-2 px-4 rounded mb-3 text-center' href="#">GitHub</a>
+    <a class = 'w-[100px] z-10 bg-green-500 inline hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white  py-2 px-4 rounded mb-3 text-center' target="_blank" href="https://aadarshbaral.github.io/portfolio/">Portfolio</a>
+    <a class = 'w-[100px] z-10 bg-lime-500 inline hover:bg-green-400 border-b-4 border-green-700 hover:border-green-500 text-white  py-2 px-4 rounded mb-3 text-center' href="#"><span>&#8593;</span> Top</a>
+</div>
+
+<p class="text-white" >@Copyright Aadarsh Baral <span id= 'dateYear'></span> </p>
+</div>
+
+</div>
+
+<script>
+    let toShow = document.getElementById("toShow");
+let button_name = document.getElementById("myBtn");
+    function myFunction() {
+
+toShow.classList.toggle('hidden');
+if (toShow.classList.contains("hidden")){
+    button_name.innerHTML = 'Extend';
+  }else{ 
+    button_name.innerHTML = "Shrink";
+  }
+    }
+let year  = new Date().getFullYear()
+document.getElementById('dateYear').innerHTML = year
+
+
+
+// Full-width images
+
+
+
+// Add active class to the current button (highlight it)
+
+let row = document.querySelector("#row-load")
+
+
+function showContainer() {
+  // Make the container visible
+  row.style.display = 'block';
+}
+
+
+
+
+</script>
+
+</body>
+</html> 
+<!-- md:flex md:flex-col md:justify-start flex justify-center flex-col items-center -->
